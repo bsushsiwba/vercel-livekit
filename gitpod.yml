@@ -1,0 +1,12 @@
+# .gitpod.yml
+
+tasks:
+  - name: Setup and Run Python
+    init: pip install -r requirements.txt
+    command: python main.py
+    openMode: split-right
+
+  - name: Setup and Run Node.js
+    init: npm install
+    command: npm run dev
+    openMode: split-right
