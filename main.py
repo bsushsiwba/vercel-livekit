@@ -25,8 +25,8 @@ Ensure that the user is comfortable with both languages Chinese and English and 
 
     assitant = VoiceAssistant(
         vad=silero.VAD.load(),
-        stt=openai.STT(),
-        llm=openai.LLM(),
+        stt=openai.STT.with_groq(),
+        llm=openai.LLM.with_groq(),
         tts=azure.TTS(),
         chat_ctx=initial_ctx,
     )
